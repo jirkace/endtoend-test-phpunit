@@ -1224,6 +1224,9 @@
       <code><![CDATA[testDouble]]></code>
       <code><![CDATA[testDouble]]></code>
     </MissingThrowsDocblock>
+    <RedundantCondition>
+      <code><![CDATA[method_exists($class, 'isReadOnly')]]></code>
+    </RedundantCondition>
     <RiskyTruthyFalsyComparison>
       <code><![CDATA[!$parameterStart]]></code>
       <code><![CDATA[empty($methods)]]></code>
