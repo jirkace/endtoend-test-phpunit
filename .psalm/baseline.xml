@@ -1209,6 +1209,10 @@
     <MissingOverrideAttribute>
       <code><![CDATA[public function __toString(): string]]></code>
     </MissingOverrideAttribute>
+    <PropertyNotSetInConstructor>
+      <code><![CDATA[$deepClone]]></code>
+      <code><![CDATA[$shallowClone]]></code>
+    </PropertyNotSetInConstructor>
     <RiskyTruthyFalsyComparison>
       <code><![CDATA[empty($methodName)]]></code>
     </RiskyTruthyFalsyComparison>
@@ -3620,6 +3624,9 @@
       <code><![CDATA[$this->stream]]></code>
       <code><![CDATA[$this->stream]]></code>
     </PossiblyInvalidArgument>
+    <PropertyNotSetInConstructor>
+      <code><![CDATA[$isPhpStream]]></code>
+    </PropertyNotSetInConstructor>
   </file>
   <file src="src/TextUI/Output/Printer/NullPrinter.php">
     <MissingOverrideAttribute>
