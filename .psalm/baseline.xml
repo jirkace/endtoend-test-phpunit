@@ -11,6 +11,9 @@
       <code><![CDATA[public function registerSubscriber(Subscriber $subscriber): void]]></code>
       <code><![CDATA[public function registerTracer(Tracer\Tracer $tracer): void]]></code>
     </MissingOverrideAttribute>
+    <MissingThrowsDocblock>
+      <code><![CDATA[dispatch]]></code>
+    </MissingThrowsDocblock>
   </file>
   <file src="src/Event/Dispatcher/DirectDispatcher.php">
     <MissingOverrideAttribute>
@@ -604,6 +607,15 @@
     <ArgumentTypeCoercion>
       <code><![CDATA[$eventClass . 'Subscriber']]></code>
     </ArgumentTypeCoercion>
+    <MissingThrowsDocblock>
+      <code><![CDATA[addMapping]]></code>
+      <code><![CDATA[addMapping]]></code>
+      <code><![CDATA[addMapping]]></code>
+      <code><![CDATA[addMapping]]></code>
+      <code><![CDATA[addMapping]]></code>
+      <code><![CDATA[addMapping]]></code>
+      <code><![CDATA[dispatch]]></code>
+    </MissingThrowsDocblock>
   </file>
   <file src="src/Event/Value/Runtime/PHP.php">
     <ImpureFunctionCall>
@@ -997,6 +1009,9 @@
       <code><![CDATA[public function operator(): string]]></code>
       <code><![CDATA[public function precedence(): int]]></code>
     </MissingOverrideAttribute>
+    <MissingThrowsDocblock>
+      <code><![CDATA[evaluate]]></code>
+    </MissingThrowsDocblock>
   </file>
   <file src="src/Framework/Constraint/Operator/LogicalNot.php">
     <MissingOverrideAttribute>
@@ -1013,6 +1028,9 @@
       <code><![CDATA[public function operator(): string]]></code>
       <code><![CDATA[public function precedence(): int]]></code>
     </MissingOverrideAttribute>
+    <MissingThrowsDocblock>
+      <code><![CDATA[evaluate]]></code>
+    </MissingThrowsDocblock>
   </file>
   <file src="src/Framework/Constraint/Operator/LogicalXor.php">
     <InvalidArgument>
@@ -1214,7 +1232,12 @@
       <code><![CDATA[mockObjectForAbstractClass]]></code>
     </DeprecatedMethod>
     <MissingThrowsDocblock>
+      <code><![CDATA[MockMethod::fromReflection($method, $callOriginalMethods, $cloneArguments)]]></code>
+      <code><![CDATA[MockMethod::fromReflection($method, false, $cloneArguments)]]></code>
       <code><![CDATA[getMethod]]></code>
+      <code><![CDATA[getMethod]]></code>
+      <code><![CDATA[getMethod]]></code>
+      <code><![CDATA[namesOfMethodsIn]]></code>
       <code><![CDATA[testDouble]]></code>
       <code><![CDATA[testDouble]]></code>
       <code><![CDATA[testDouble]]></code>
@@ -1260,6 +1283,9 @@
                 'return_result'      => $returnResult,
             ]]]></code>
     </InvalidArgument>
+    <MissingThrowsDocblock>
+      <code><![CDATA[self::exportDefaultValue($parameter)]]></code>
+    </MissingThrowsDocblock>
     <PossiblyFalseOperand>
       <code><![CDATA[strpos($parameterAsString, '<optional> ')]]></code>
     </PossiblyFalseOperand>
@@ -1308,6 +1334,9 @@
       <code><![CDATA[public function with(mixed ...$arguments): self]]></code>
       <code><![CDATA[public function withAnyParameters(): self]]></code>
     </MissingOverrideAttribute>
+    <MissingThrowsDocblock>
+      <code><![CDATA[matchesName]]></code>
+    </MissingThrowsDocblock>
     <PropertyTypeCoercion>
       <code><![CDATA[$configurableMethods]]></code>
     </PropertyTypeCoercion>
@@ -1459,6 +1488,12 @@
     </MissingOverrideAttribute>
     <MissingThrowsDocblock>
       <code><![CDATA[getMethod]]></code>
+      <code><![CDATA[markErrorForInvalidDependency]]></code>
+      <code><![CDATA[markErrorForInvalidDependency]]></code>
+      <code><![CDATA[markErrorForInvalidDependency]]></code>
+      <code><![CDATA[markErrorForInvalidDependency]]></code>
+      <code><![CDATA[markErrorForInvalidDependency]]></code>
+      <code><![CDATA[markErrorForInvalidDependency]]></code>
     </MissingThrowsDocblock>
     <PropertyNotSetInConstructor>
       <code><![CDATA[$outputBufferingLevel]]></code>
@@ -1609,6 +1644,11 @@
       <code><![CDATA[public function sortId(): string]]></code>
       <code><![CDATA[public function toString(): string]]></code>
     </MissingOverrideAttribute>
+    <MissingThrowsDocblock>
+      <code><![CDATA[TestResultFacade::shouldStop()]]></code>
+      <code><![CDATA[TestResultFacade::shouldStop()]]></code>
+      <code><![CDATA[addTestMethod]]></code>
+    </MissingThrowsDocblock>
     <MoreSpecificReturnType>
       <code><![CDATA[list<ExecutionOrderDependency>]]></code>
       <code><![CDATA[list<ExecutionOrderDependency>]]></code>
@@ -1748,6 +1788,7 @@
     <MissingThrowsDocblock>
       <code><![CDATA[comparisonFailure]]></code>
       <code><![CDATA[comparisonFailure]]></code>
+      <code><![CDATA[previous]]></code>
     </MissingThrowsDocblock>
     <PropertyNotSetInConstructor>
       <code><![CDATA[$flowId]]></code>
@@ -1879,6 +1920,12 @@
     </MissingOverrideAttribute>
   </file>
   <file src="src/Metadata/Api/CodeCoverage.php">
+    <MissingThrowsDocblock>
+      <code><![CDATA[stringToCodeUnits]]></code>
+      <code><![CDATA[stringToCodeUnits]]></code>
+      <code><![CDATA[stringToCodeUnits]]></code>
+      <code><![CDATA[stringToCodeUnits]]></code>
+    </MissingThrowsDocblock>
     <RedundantCondition>
       <code><![CDATA[$metadata instanceof CoversFunction]]></code>
       <code><![CDATA[$metadata instanceof UsesFunction]]></code>
@@ -2075,6 +2122,13 @@
      *   string|array{version: string, operator: string}|array{constraint: string}|array<int|string, string>
      * >]]></code>
     </InvalidReturnType>
+    <MissingThrowsDocblock>
+      <code><![CDATA[throw new InvalidVersionRequirementException(
+                        $e->getMessage(),
+                        $e->getCode(),
+                        $e,
+                    )]]></code>
+    </MissingThrowsDocblock>
     <RiskyTruthyFalsyComparison>
       <code><![CDATA[empty($matches['version'])]]></code>
       <code><![CDATA[empty($requires[$matches['name']])]]></code>
@@ -2114,6 +2168,36 @@
       <code><![CDATA[public function forClassAndMethod(string $className, string $methodName): MetadataCollection]]></code>
       <code><![CDATA[public function forMethod(string $className, string $methodName): MetadataCollection]]></code>
     </MissingOverrideAttribute>
+    <MissingThrowsDocblock>
+      <code><![CDATA[ConstraintRequirement::from(
+                            $attributeInstance->versionRequirement(),
+                        )]]></code>
+      <code><![CDATA[ConstraintRequirement::from(
+                            $attributeInstance->versionRequirement(),
+                        )]]></code>
+      <code><![CDATA[ConstraintRequirement::from(
+                            $attributeInstance->versionRequirement(),
+                        )]]></code>
+      <code><![CDATA[ConstraintRequirement::from(
+                            $attributeInstance->versionRequirement(),
+                        )]]></code>
+      <code><![CDATA[ConstraintRequirement::from(
+                            $attributeInstance->versionRequirement(),
+                        )]]></code>
+      <code><![CDATA[ConstraintRequirement::from(
+                            $attributeInstance->versionRequirement(),
+                        )]]></code>
+      <code><![CDATA[ConstraintRequirement::from(
+                            $attributeInstance->versionRequirement(),
+                        )]]></code>
+      <code><![CDATA[ConstraintRequirement::from(
+                            $attributeInstance->versionRequirement(),
+                        )]]></code>
+      <code><![CDATA[ConstraintRequirement::from($versionRequirement)]]></code>
+      <code><![CDATA[ConstraintRequirement::from($versionRequirement)]]></code>
+      <code><![CDATA[ConstraintRequirement::from($versionRequirement)]]></code>
+      <code><![CDATA[ConstraintRequirement::from($versionRequirement)]]></code>
+    </MissingThrowsDocblock>
   </file>
   <file src="src/Metadata/Parser/CachingParser.php">
     <MissingOverrideAttribute>
@@ -2263,6 +2347,12 @@
     <MissingOverrideAttribute>
       <code><![CDATA[public function isWithoutErrorHandler(): bool]]></code>
     </MissingOverrideAttribute>
+  </file>
+  <file src="src/Runner/Baseline/Reader.php">
+    <MissingThrowsDocblock>
+      <code><![CDATA[Issue::from($file, $line, $hash, $description)]]></code>
+      <code><![CDATA[Issue::from($file, $line, $hash, $description)]]></code>
+    </MissingThrowsDocblock>
   </file>
   <file src="src/Runner/Baseline/RelativePathCalculator.php">
     <LessSpecificReturnStatement>
@@ -2761,6 +2851,9 @@
     <MissingOverrideAttribute>
       <code><![CDATA[public function execute(): Result]]></code>
     </MissingOverrideAttribute>
+    <MissingThrowsDocblock>
+      <code><![CDATA[id]]></code>
+    </MissingThrowsDocblock>
   </file>
   <file src="src/TextUI/Command/Commands/MigrateConfigurationCommand.php">
     <MissingOverrideAttribute>
@@ -3146,6 +3239,12 @@
       <code><![CDATA[$directoryNode->getAttribute('phpVersionOperator')]]></code>
       <code><![CDATA[$fileNode->getAttribute('phpVersionOperator')]]></code>
     </ArgumentTypeCoercion>
+    <MissingThrowsDocblock>
+      <code><![CDATA[new VersionComparisonOperator($directoryNode->getAttribute('phpVersionOperator'))]]></code>
+      <code><![CDATA[new VersionComparisonOperator($fileNode->getAttribute('phpVersionOperator'))]]></code>
+      <code><![CDATA[new VersionComparisonOperator('>=')]]></code>
+      <code><![CDATA[new VersionComparisonOperator('>=')]]></code>
+    </MissingThrowsDocblock>
     <RedundantConditionGivenDocblockType>
       <code><![CDATA[assert($directoryNode instanceof DOMElement)]]></code>
       <code><![CDATA[assert($fileNode instanceof DOMElement)]]></code>
@@ -3349,6 +3448,11 @@
       <code><![CDATA[public function getIterator(): ArrayIterator]]></code>
     </MissingOverrideAttribute>
   </file>
+  <file src="src/TextUI/Configuration/Xml/SchemaDetector/SchemaDetector.php">
+    <MissingThrowsDocblock>
+      <code><![CDATA[find]]></code>
+    </MissingThrowsDocblock>
+  </file>
   <file src="src/TextUI/Configuration/Xml/SchemaDetector/SuccessfulSchemaDetectionResult.php">
     <MissingOverrideAttribute>
       <code><![CDATA[public function detected(): bool]]></code>
@@ -3457,6 +3561,16 @@
     </MissingOverrideAttribute>
   </file>
   <file src="src/TextUI/Output/Default/ResultPrinter.php">
+    <MissingThrowsDocblock>
+      <code><![CDATA[asString]]></code>
+      <code><![CDATA[asString]]></code>
+      <code><![CDATA[asString]]></code>
+      <code><![CDATA[name]]></code>
+      <code><![CDATA[name]]></code>
+      <code><![CDATA[name]]></code>
+      <code><![CDATA[name]]></code>
+      <code><![CDATA[name]]></code>
+    </MissingThrowsDocblock>
     <RedundantCondition>
       <code><![CDATA[assert($test instanceof TestMethod)]]></code>
       <code><![CDATA[assert($test instanceof TestMethod)]]></code>
@@ -3512,6 +3626,11 @@
       <code><![CDATA[public function flush(): void]]></code>
       <code><![CDATA[public function print(string $buffer): void]]></code>
     </MissingOverrideAttribute>
+  </file>
+  <file src="src/TextUI/Output/TestDox/ResultPrinter.php">
+    <MissingThrowsDocblock>
+      <code><![CDATA[printTestResult]]></code>
+    </MissingThrowsDocblock>
   </file>
   <file src="src/TextUI/TestSuiteFilterProcessor.php">
     <ArgumentTypeCoercion>
